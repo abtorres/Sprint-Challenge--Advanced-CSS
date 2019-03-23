@@ -11,7 +11,17 @@
     p {
       padding:0 15px;
     }
-  
+
+  @media @phone {
+    max-width: 500px;
+  }
+
+  }
+
+  .header-img {
+    @media @phone {
+      max-width: 500px;;
+    }
   }
 
   .space-images {
@@ -24,6 +34,14 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media @phone {
+        width: 90%;
+      }
+    }
+    @media @phone {
+      img:nth-child(n+2) {
+        display: none;
+      }
     }
   }
 
