@@ -256,6 +256,11 @@ footer {
   height: 50px;
   font-size: 1.6rem;
 }
+.home .walk .walk-text .btn:hover {
+  background: white;
+  color: black;
+  border: 2px solid black;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
