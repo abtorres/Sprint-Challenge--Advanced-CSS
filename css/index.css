@@ -1,3 +1,15 @@
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.centered-xy {
+  justify-content: center;
+  align-content: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -159,6 +171,25 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+.nav-bar h1 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: 4rem;
+}
+.nav-bar .nav-items .items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  padding: 20px;
+  font-size: 1.6rem;
+}
+.nav-bar .nav-items .items a {
+  text-decoration: none;
+  color: black;
+  margin: 20px;
 }
 footer {
   color: #22283B;
