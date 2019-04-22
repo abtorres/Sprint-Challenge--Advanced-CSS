@@ -1,0 +1,68 @@
+.sign-in {
+    width: 100%;
+    height: 100vh;
+    .flex-col;
+    background-image: url('https://wi-images.condecdn.net/image/B1NZW376pxM/crop/1620/f/space_11.jpg');
+    background-repeat: none;
+    background-size: cover;
+    color: white;
+    h1 {
+        font-size: 4rem;
+        text-align: center;
+        color: white;
+    }
+    .form-div {
+        .flex-col; 
+        height: 100vh;
+        align-content: center;
+        .form-section {
+            max-width: 500px;
+            // margin: 2rem auto;
+            padding: 2rem;
+            border-radius: 7px;
+            align-self: center;
+            margin-top: 120px;
+            h2 {
+                text-align: center;
+                padding-bottom: 10px;
+                color: white;
+            }
+            label {
+            display: block;
+            padding: 1rem 0 .25rem;
+            text-transform: uppercase;
+            font-size: 14px;
+            margin-bottom: 5px;
+            }
+            input, textarea {
+            display: block;
+            width: 100%;
+            padding: .5rem;
+            // border: 2px solid green;
+            font-size: 14px;
+            // border-radius: 7px;
+            border: 0;
+            margin-bottom: 10px;
+            }
+        }
+        #send-btn {
+            border: 0;
+            background: green;
+            padding: .5rem;
+            color: white;
+            margin: 1rem 0;
+            width: auto;
+            text-transform: uppercase;
+            align-self: center;
+            cursor: pointer;
+            transition: .3s background ease;
+            &:hover {
+                background: lightgreen;
+            }
+        }
+    }
+}
+
+#contact-form {
+    .flex-col;
+}

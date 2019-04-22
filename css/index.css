@@ -184,12 +184,18 @@ p {
   justify-content: center;
   align-content: center;
   padding: 20px;
-  font-size: 1.6rem;
 }
 .nav-bar .nav-items .items a {
   text-decoration: none;
   color: black;
   margin: 20px;
+  font-size: 1.6rem;
+}
+.nav-bar .nav-items .items a:hover {
+  color: darkgreen;
+  border: 1px solid orange;
+  border-radius: 10%;
+  padding: 5px;
 }
 footer {
   color: #22283B;
@@ -211,6 +217,13 @@ footer {
   .home .intro {
     max-width: 500px;
   }
+}
+.home .header-img {
+  border-radius: 20px;
+  border: 2px solid lightgreen;
+}
+.home .header-img:hover {
+  border-color: orange;
 }
 @media (max-width: 500px) {
   .home .header-img {
@@ -317,4 +330,72 @@ footer {
     width: 100%;
     margin: 0;
   }
+}
+.sign-in {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url('https://wi-images.condecdn.net/image/B1NZW376pxM/crop/1620/f/space_11.jpg');
+  background-repeat: none;
+  background-size: cover;
+  color: white;
+}
+.sign-in h1 {
+  font-size: 4rem;
+  text-align: center;
+  color: white;
+}
+.sign-in .form-div {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-content: center;
+}
+.sign-in .form-div .form-section {
+  max-width: 500px;
+  padding: 2rem;
+  border-radius: 7px;
+  align-self: center;
+  margin-top: 120px;
+}
+.sign-in .form-div .form-section h2 {
+  text-align: center;
+  padding-bottom: 10px;
+  color: white;
+}
+.sign-in .form-div .form-section label {
+  display: block;
+  padding: 1rem 0 0.25rem;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.sign-in .form-div .form-section input,
+.sign-in .form-div .form-section textarea {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 14px;
+  border: 0;
+  margin-bottom: 10px;
+}
+.sign-in .form-div #send-btn {
+  border: 0;
+  background: green;
+  padding: 0.5rem;
+  color: white;
+  margin: 1rem 0;
+  width: auto;
+  text-transform: uppercase;
+  align-self: center;
+  cursor: pointer;
+  transition: 0.3s background ease;
+}
+.sign-in .form-div #send-btn:hover {
+  background: lightgreen;
+}
+#contact-form {
+  display: flex;
+  flex-direction: column;
 }
