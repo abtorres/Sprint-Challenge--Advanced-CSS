@@ -1,0 +1,401 @@
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.centered-xy {
+  justify-content: center;
+  align-content: center;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #5E6164;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.nav-bar h1 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: 4rem;
+}
+.nav-bar .nav-items .items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  padding: 20px;
+}
+.nav-bar .nav-items .items a {
+  text-decoration: none;
+  color: black;
+  margin: 20px;
+  font-size: 1.6rem;
+}
+.nav-bar .nav-items .items a:hover {
+  color: darkgreen;
+  border: 1px solid orange;
+  border-radius: 10%;
+  padding: 5px;
+}
+footer {
+  color: #22283B;
+  background: #f4f4f4;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .intro h2 {
+  padding: 15px;
+}
+.home .intro p {
+  padding: 0 15px;
+}
+@media (max-width: 500px) {
+  .home .intro {
+    max-width: 500px;
+  }
+}
+.home .header-img {
+  border-radius: 20px;
+  border: 2px solid lightgreen;
+}
+.home .header-img:hover {
+  border-color: orange;
+}
+@media (max-width: 500px) {
+  .home .header-img {
+    max-width: 500px;
+  }
+}
+.home .space-images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.home .space-images img {
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images img {
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images img:nth-child(n+2) {
+    display: none;
+  }
+}
+.home .visit-planets {
+  padding: 15px;
+}
+.home .visit-planets h3 {
+  margin-top: 11px;
+}
+.home .visit-planets p {
+  margin-top: 13px;
+}
+.home .walk {
+  margin-top: 60px;
+  border-top: 1px solid #dee2e6;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: center;
+}
+.home .walk .walk-text {
+  width: 50%;
+}
+.home .walk .walk-text h3 {
+  margin-bottom: 10px;
+}
+.home .walk .walk-text p {
+  margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 10px;
+  max-width: 100px;
+  height: 50px;
+  font-size: 1.6rem;
+}
+.home .walk .walk-text .btn:hover {
+  background: white;
+  color: black;
+  border: 2px solid black;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    max-width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    flex-direction: column;
+    padding: 15px;
+  }
+  .home .walk .walk-text .walk-text {
+    order: 2;
+    max-width: 100%;
+  }
+}
+.home .walk .walk-img {
+  width: 46%;
+  margin-left: 4%;
+}
+.home .walk .walk-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk {
+    flex-direction: column;
+    padding: 15px;
+  }
+  .home .walk .walk-text {
+    order: 2;
+    width: 100%;
+  }
+  .home .walk .walk-img {
+    width: 100%;
+    margin: 0;
+  }
+}
+.sign-in {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url('https://wi-images.condecdn.net/image/B1NZW376pxM/crop/1620/f/space_11.jpg');
+  background-repeat: none;
+  background-size: cover;
+  color: white;
+}
+.sign-in h1 {
+  font-size: 4rem;
+  text-align: center;
+  color: white;
+}
+.sign-in .form-div {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-content: center;
+}
+.sign-in .form-div .form-section {
+  max-width: 500px;
+  padding: 2rem;
+  border-radius: 7px;
+  align-self: center;
+  margin-top: 120px;
+}
+.sign-in .form-div .form-section h2 {
+  text-align: center;
+  padding-bottom: 10px;
+  color: white;
+}
+.sign-in .form-div .form-section label {
+  display: block;
+  padding: 1rem 0 0.25rem;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.sign-in .form-div .form-section input,
+.sign-in .form-div .form-section textarea {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 14px;
+  border: 0;
+  margin-bottom: 10px;
+}
+.sign-in .form-div #send-btn {
+  border: 0;
+  background: green;
+  padding: 0.5rem;
+  color: white;
+  margin: 1rem 0;
+  width: auto;
+  text-transform: uppercase;
+  align-self: center;
+  cursor: pointer;
+  transition: 0.3s background ease;
+}
+.sign-in .form-div #send-btn:hover {
+  background: lightgreen;
+}
+#contact-form {
+  display: flex;
+  flex-direction: column;
+}
